@@ -1,0 +1,14 @@
+@media print {
+    
+    header,a,footer {
+         display: none !important;
+    }
+
+    .video {
+         display: none !important;
+    }
+
+    .gallery {
+         display: none !important;
+    }
+}

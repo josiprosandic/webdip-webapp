@@ -1,0 +1,461 @@
+/* CSS Variables */
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
+body {
+    background: #fff;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+    max-width: 100%;
+}
+
+.top-container .btn {
+    background: var(--dark);
+    color: var(--light);
+    border-radius: 6px;
+    padding: 1.2rem 0.7rem;
+    text-decoration: none;
+    border: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Navigation */
+.main-nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.main-nav a {
+    background: var(--primary);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+}
+
+.main-nav a:hover {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.hdr a:hover {
+    background: var(--dark);
+    color: var(--light);
+}
+
+/*Search and logof*/
+.hdr input[type=text] {
+    width: 10%;
+    float: right;
+    padding: 11px;
+    margin: 0px;
+}
+
+.hdr .search-container button {
+    float: right;
+    padding: 11px 20px;
+    background: #ddd;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.hdr .logof button {
+    float: right;
+    padding: 11px 20px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.hdr .logof button:hover {
+    background: #ccc;
+}
+
+
+/* Top Container */
+.top-container {
+    display: grid;
+    grid-gap: 20px;
+}
+
+/* top-container-content */
+.top-container-content {
+    grid-area: auto;
+    min-height: 400px;
+    background: url(../multimedija/header.svg);
+    background-size: cover;
+    background-position: center;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+
+.top-container-content h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: var(--dark);
+}
+
+.top-container-content p {
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: var(--dark);
+}
+
+/* Boxes */
+.boxes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.boxes a {
+    text-decoration: none;
+    color: #2980b9;
+}
+
+.boxes a:hover {
+    border: 3px white solid;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.box {
+    background: var(--primary);
+    text-align: justify;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+}
+
+/* Info */
+.info {
+    background: var(--primary);
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+}
+
+.info h2 {
+    font-size: 3rem;
+    margin: 0px;
+}
+
+.info h2:hover {
+    color: #666;
+    text-shadow: 1px 1px #aaa;
+}
+
+.info p {
+    font-size: 1.5em;
+    margin: 10px 0px 10px;
+}
+
+.info p:hover {
+    font-weight: bold;
+    font-size: 1.7em;
+    text-shadow: 1px 1px white;
+}
+
+.interests > img {
+    padding: 40px;
+    box-shadow: var(--shadow);
+    border-radius: 8px;
+    background-color: #ccc;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.interests > img:hover {
+    background-color: #999;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-gap: 20px;
+    height: 70vh;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.gallery img {
+    width: 100%;
+    box-shadow: var(--shadow);
+    height: 100%;
+    border-radius: 6px;
+}
+
+.gallery img:hover {
+    width: 103%;
+    height: 103%;
+}
+
+/* Footer */
+footer {
+    margin-top: 2rem;
+    background: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer > img {
+    height: 80px;
+    width: 80px;
+    padding: 20px;
+}
+
+/*Forma*/
+
+input[type=text], input[type=password],
+input[type=email], input[type=date], input[type=range],
+input[type=url], input[type=datetime-local], input[type=file],
+input[type=tel], input[type=week], input[type=number] {
+    width: 100%;
+    padding: 20px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=color] {
+
+    padding: 1px;
+    margin: 10px 0 32px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=date]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/*SELECT veći izbornik*/
+select {
+    width: 100%;
+    padding: 20px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 50px;
+}
+
+/* Set a style for the submit/register button */
+.btn {
+    background-color: var(--dark);
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+
+/*MULTIMEDIJA*/
+div.multimedia {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div.video {
+    margin: 40px;
+    border: 1px solid #ccc;
+    box-shadow: var(--shadow);
+    border-radius: 7px;
+    width: 30%;
+    padding: 50px;
+    text-align: center;
+}
+
+div.audio {
+    margin: 40px;
+    border: 1px solid #ccc;
+    box-shadow: var(--shadow);
+    border-radius: 7px;
+    width: 30%;
+    padding: 30px;
+    text-align: center;
+}
+
+/*TABLICA*/
+
+.table {
+    border-collapse: collapse;
+    margin: 0px;
+    box-shadow: var(--shadow);
+}
+
+.table td {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 10px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: var(--primary);
+}
+
+.table th {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: #444;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.table .headerField {
+    border-color: inherit;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px
+}
+
+.tg .bodyField {
+    text-align: left;
+    vertical-align: top;
+}
+
+#ukupno {
+    color: #444;
+}
+
+/*--------------------------------------
+Zadaća 4
+---------------------------------------*/
+
+.ispis-greske {
+    color: #c0392b;
+    font-size: larger;
+}
+
+.ispis-poruke {
+    color: green;
+    font-size: larger;
+}
+
+#btnAzuriraj {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: var(--primary);
+    color: var(--dark);
+    border-radius: 2px;
+    box-shadow: var(--shadow);
+    transition: 0.5s;
+}
+
+#btnAzuriraj:hover {
+    background: var(--dark);
+    color: var(--light);
+    border-radius: 7px;
+}
+
+#btnAzurirajKorisnika {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: #C0392B;
+    color: var(--light);
+    border-radius: 2px;
+    box-shadow: var(--shadow);
+    transition: 0.2s;
+    margin: 10px 0px 10px;
+}
+
+#btnAzurirajKorisnika:hover {
+    background: var(--light);
+    color: #C0392B;
+    border-radius: 2px;
+}
+
+#btnPokaziLozinku {
+    padding: 5px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: var(--primary);
+    color: var(--dark);
+    border-radius: 2px;
+    box-shadow: var(--shadow);
+    transition: 0.2s;
+    margin: 10px 0px 25px;
+}
+
+#btnPokaziLozinku:hover {
+    background: var(--dark);
+    color: var(--light);
+    border-radius: 2px;
+}
